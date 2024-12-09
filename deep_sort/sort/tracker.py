@@ -43,7 +43,8 @@ class Tracker:
         self.max_age = max_age
         self.n_init = n_init
 
-        self.kf = kalman_filter.KalmanFilter()
+        #self.kf = kalman_filter.KalmanFilter()
+        self.kf = kalman_filter.ExtendedKalmanFilter()
         self.tracks = []
         self._next_id = 1
 
